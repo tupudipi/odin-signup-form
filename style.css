@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.side{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0f/Corpus_Christi_College_New_Court%2C_Cambridge%2C_UK_-_Diliff.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+main{
+    background-color: whitesmoke;
+    padding-top: 80px;
+}
+
+.form-header{
+    margin: 3rem;
+    width: 75%;
+}
+
+form{
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.25);
+}
+
+.inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    box-shadow: black;
+}
+
+.form-footer{
+    margin: 3rem;
+}
+
+.inputs>div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: rgba(0,0,0,0.5);
+}
+
+.side{
+    color: white;
+}
+
+.band>img{
+    width:5rem;
+}
+
+.band{
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+    gap: 1rem;
+    position: absolute;
+    top: 20%;
+    height: 15%;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel]{
+    margin-top: 0.25rem;
+    line-height: 2rem;
+    padding: 0 8px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
