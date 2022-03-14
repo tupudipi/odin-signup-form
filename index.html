@@ -22,8 +22,8 @@
         <main>
 
             <div class="form-header">
-                <h2>This is not a real online service! You know you need something like this in your
-                    life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.
+                <h2>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. <br> Sign up <em>now</em> to get started.
                 </h2>
                 <h2>
                     You <em>know</em> you want to.
@@ -31,6 +31,7 @@
             </div>
             <form action="" method="get" id="signup">
                 <h2>Let's do this!</h2>
+                <p>Required fields are marked with a *</p>
                 <div class="inputs">
                     <div>
                         <label for="firstName">first name</label>
@@ -40,17 +41,21 @@
                         <label for="lastName">last name</label>
                         <input type="text" name="lastName" id="lastName">
                     </div>
-                    <div><label for="email">email</label>
-                        <input type="email" name="email" id="email">
+                    <div>
+                        <label for="email">email *</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
-                    <div><label for="tel">phone number</label>
+                    <div>
+                        <label for="tel">phone number</label>
                         <input type="tel" name="tel" id="tel">
                     </div>
-                    <div><label for="password">password</label>
-                        <input type="password" name="password" id="password">
+                    <div>
+                        <label for="password">password *</label>
+                        <input type="password" name="password" id="password" required>
                     </div>
-                    <div><label for="rePassword">confirm password</label>
-                        <input type="password" name="rePassword" id="rePassword">
+                    <div>
+                        <label for="rePassword">confirm password *</label>
+                        <input type="password" name="rePassword" id="rePassword" required>
                     </div>
                 </div>
             </form>
@@ -63,5 +68,6 @@
         </main>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
