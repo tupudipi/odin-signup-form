@@ -37,7 +37,7 @@ main {
 form {
     background-color: white;
     padding: 0.8rem 3rem;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
 form>h2 {
@@ -131,6 +131,14 @@ button[type=submit] {
 button[type=submit]:hover {
     border-radius: 1.2rem;
     color: white;
+    background-color: rgb(20, 105, 161);
+}
+
+button[type=submit]:active {
+    border-radius: 1.2rem;
+    color: white;
+    background-color: rgb(49, 172, 255);
+    transform: translateY(4px);
 }
 
 a {
@@ -144,5 +152,52 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
+    /* body{
+        text-align: center;
+    } */
 
+    .container{
+        display: block;
+    }
+
+    .side{
+        height: 20vh;
+        margin: 0;
+    }
+
+    .band{
+        position: relative;
+        height: unset;
+    }
+
+    main{
+        margin: 0;
+        padding-top: 0px;
+    }
+
+    .form-header,
+    .form-header>h2{
+        margin-top: 0;
+    }
+
+    .form-header{
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .inputs{
+       display: block;
+       width: 100%;
+    }
+
+    .inputs>div {
+        width: 100%;
+    }
+
+    .form-footer {
+        margin: 0;
+        padding: 3rem;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
   }
